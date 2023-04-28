@@ -1,0 +1,10 @@
+<div class="p-3 border m-3">
+    <p class="display-5">Heroes</p>
+    <p> {{newdata}} </p>
+    <p> id: {{specdata.id}} </p>
+    <p> Hero Name: </p>
+    <input type="text" [(ngModel)]="newdata" value="{{specdata.name}}">
+    <div class="mt-2">
+        <button class="btn btn-secondary" routerLink="/heroes" (click)="call()">Back</button>
+    </div>
+</div>

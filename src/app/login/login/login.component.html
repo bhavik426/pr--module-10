@@ -1,0 +1,19 @@
+<div class="p-5">
+    <div class="border">
+        <div class="p-2">
+            <label for="username" class="me-2">Username :</label>
+            <input type="text" [disabled]="val" class="w-100" [(ngModel)]="username">
+        </div>
+        <div class="p-2">
+            <label for="password" class="me-3">Password :</label>
+            <input type="password" [disabled]="val" class="w-100" [(ngModel)]="password">
+        </div>
+        <div class="p-2 d-flex">
+            <button class="btn btn-secondary" [disabled]="val" (click)="login()">Sign In</button>
+            <button class="ms-3 {{opt}} btn btn-secondary" (click)="loghimout()">Logout</button>
+        </div>
+        <div class="p-2">
+            {{user}}
+        </div>
+    </div>
+</div>
